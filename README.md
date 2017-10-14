@@ -1,1 +1,42 @@
-# Data-Viz-Lab-4
+# MSIS Dashboard Part-1<br>
+  >This is an additional submission to lab 4, to show images properly on github.<br>
+  >This is part-1 of a three part project where we are developing a Dashboard for prospective MSIS students, as well as recruiters. For this session, we are obtaining 3 sets of data from the web, cleaning and reformatting them, and finally producing prototypes for each.<br><br>
+  
+**Dataset #1:**<br>
+<img width="503" alt="table4 1" src="https://user-images.githubusercontent.com/32026039/31579389-10fe4d42-b0ea-11e7-85ab-87951ef93673.png"><br>
+*Advantages:* This graph gives prospective students a quick look at which big companies alumnis have landed jobs in; some of the reputations of the companies listed (google, Facebook, Apple, etc.) might give students the impression that the MSIS program will gear them with the skills needed to obtain jobs in those companies. The different sizes of the circles will give them a rough estimation about distribution of the actual numbers that work in that organization.<br>
+
+*Disadvantages:* There are some disadvantages to this visualization. First, the data is skewed; Linkedin does not show the entire list of companies which the Alumnis work at, and this also only represent those that are registered on Linkedin and identifies them selves as a MSIS Alumni; there are plenty of other Alumnis out there who are not considered for this data. Second, the actual numbers are based only on those who are currently employed; if the user clicks on 'Apple', a circle with considerable size, they will find that only 11 people work there. However, the small pool in which the data was taken gives the wrong impression that a high percentage of alumnis work there. Finally, there are many circles which have similar sizes; this will be difficult for comparison of the different companies without putting in any numbers or percentages.<br>
+
+*Possible Improvements:* Without getting into the flaws of the dataset, I can improve the visualization by adding more information on to the chart; I can clarify that this was taken from a pool of around 500 alumnis, and is further deducted down to a little 1/5th of that size (Linkedin will only show top 15 records). I can also chose to show actual values in the circles to give viewers a better sense of what the actual size of the population who work for the different organizations. 
+
+**Dataset #2:**<br>
+<img width="904" alt="table4 2" src="https://user-images.githubusercontent.com/32026039/31579390-112324be-b0ea-11e7-8cb6-2ab65bdcab85.png"><br>
+*Advantages:* This visualization shows a clear trend in rankings of the different skills, as well as how the MSIS program is related to the skills listed; if a prospective student is interested in a particular skill, or a specific job listed on Linkedin in mind, they can see clearly from the tool-tip which MSIS class they should definitely consider taking in the future if they want to study the topic futher. Recruiters of jobs with those skills could also see what classes are offered at SCU and maybe click provided links to see further course description; they will get a better sense of how the student will acquire the skill and keep this in mind when they recruit students from the program.<br>
+
+*Disadvantages:* A major disadvantage is that the mark labels do not conform with the data set; it cannot rotate to fit the data points thus making the visualization looking very cluttered. Also, it is not apparent without moving the cursor onto the skills that there are specific courses tailored towards that skill. Another is that although there are very specific courses designed with the skills in mind, there are also courses that do not explicitly refer to the skill in the course title: object-oriented programming could also refer to Python, capstone design projects would also give the student algorithm design skills, etc. Some courses did not match to any skill, but they do give the student the foundations of the listed skills. For example, visualization course could also be very helpful in the process of acquiring the skill of statistical analysis. Another disadvantage is that the data is only limited to the US; if students are looking to get a job in another country, the ranking would look different and some courses may not carry (Ethics, policy & stratege).<br>
+
+*Improvements:* I could improve this visualization by providing links to course description for further reading, I could also put a mark label on each skill indicating that there are a number of specific courses related to that skill. To make the visualization more readable, I could perhaps eliminate some of the courses and keep only the top 5 skills relating to the MSIS program. For future projects, if I had to match large pool of course titles to these skills (ie. Which MSIS curriculum in the US will make you most of the skills on that list?), I could use FuzzyWuzzy to match course title or course description with these skills.
+
+**Dataset #3:**<br>
+<img width="902" alt="table4 3" src="https://user-images.githubusercontent.com/32026039/31579391-1149856e-b0ea-11e7-9999-52c3a9854010.png">
+*Advantages:* This graph shows a clear upward trend for both the total employment available and the mean annual salary for the two selected job positions. The viewer will quickly understand the argument I am tryng to communicate.<br>
+
+*Disadvantages:* There are very little data points selected for this visualization, making the argument somewhat weak. The Bureau of Labor is also dated in their description of data-related jobs; data analysis is so prevalent throughout every industry that it should be be restricted only to computers and mathematics; they could be used in education, financial organizations etc. To counter this, I have selected two very broad  fields, which include positions most often is associated with data analysts/data scientists.<br>
+
+*Improvements:* I could provide links to the specific title descriptions to give the audience a clear idea of what these jobs are. I could also data from prior years to show a more complete trend and reveal additional insights into the data field. Further more, the original data was very comprehensive; I can incorporate percentage of data-specialized jobs in relation to the entire computer/mathematics industry. Another way to further increase the accuracy of the data is to maybe run it through FuzzyWuzzy and get a rough match for data-related postions for every industry. <br>
+
+## Discussion<br>
+My original claim for the datasets collectively was that the MSIS program will gear students with the current most demanding skill on the job market, and the 3rd visualization also expressed that jobs related to data management and data analysis is on the rise, making the MSIS program an ideal place to be for student aiming to jump-start their career. However, there is a assumption that students who joined and finishes the MSIS program will be well-geared to join the job hunt, but how to get those high-demand jobs (such as those in FLAG companies) will be dependent on their individual abilities.<br>
+To make my claim stronger, I could have found further data supporting the fact that alumnis are getting these positions very fast when they graduate (ie. data on days it takes for new-grads to get employment), and positions related to the high demanding skills in (dataset #2) are filling up fast(ie. data type job posts and how fast they are filled). Although it would be hard to find accurate data on how fast a MSIS program graduate finds a job, I could use a generit set of data on similar US master program graduates. Together with the original data I had, I can modify my claim to be **MSIS is a good program because it will make you highly employable.**  <br><br>
+
+### Resources Used:<br>
+1. MSIS Alumni Work Info/Skillset: __[Linkedin Leavy Alumni Group](https://www.linkedin.com/school/165847/alumni/?facetFieldOfStudy=101468)__<br>
+2. Top Skills on Linkedin: __[Makeover Monday Blog Post](https://www.tableau.com/about/blog/2017/4/flex-your-data-skills-makeover-monday-68584)__<br>
+3. Occupational Employment Statistics - __[Bureau of Labor Statistics](https://www.bls.gov/oes/tables.htm)__<br>
+4. MSIS Curriculum Info: __[List of Courses](https://www.scu.edu/business/graduates/bulletin/programs-and-admissions/course-descriptions/master-of-science-in-information-systems/)__<br>
+5. Beautiful Soup Documentation:__[Link](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#tag)__<br>
+6. Beautiful Soup Tutorial Series: __[Link](https://www.youtube.com/watch?v=aIPqt-OdmS0&list=PLQVvvaa0QuDfV1MIRBOcqClP6VZXsvyZS)__<br>
+
+  
+  
